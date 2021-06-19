@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+    list-style: none;
+}
+
+#nav li a {
+    color: white;
+    padding: 0 24px;
+    line-height: 46px;
+    text-decoration: none;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a ,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .arrow-down {
+    font-size: 16px;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: #fff;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 16px;
+    line-height: 36px;
+}
+
+#header .search-btn {
+    float: right;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
+    padding: 0 20px;
+}
+
+#header .search-icon:hover {
+    background-color: #f44336;
+}
+
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/Exc//TheBand/static/img/slider/Slider1.jpg') top center / cover no-repeat ;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 46px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+}
